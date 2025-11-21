@@ -5,7 +5,7 @@ body {
 }
 header {
     background-color: white;
-    border-bottom: 1px solid #e8e8e8;
+    border-bottom: 2px solid #e5e5e5;
     padding: 10px 0;
 }
 header .contenido {
@@ -16,11 +16,12 @@ header .contenido {
     align-items: center;
 }
 .logo h1 {
-    font-family: "Playfair Display", serif;
-    font-size: 26px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
     font-weight: 700;
     color: #0d1b2a;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 .logo {
     display: flex;
@@ -34,16 +35,16 @@ nav {
 }
 nav ul {
     display: flex;
-    gap: 28px;
+    gap: 32px;
     list-style: none;
-    align-items: center;
     margin: 0;
     padding: 0;
 }
 nav a {
     color: #222;
     text-decoration: none;
-    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
     font-size: 15px;
     transition: color .2s ease;
 }
@@ -52,7 +53,7 @@ nav a:hover {
     color: #0d1b2a;
 }
 .CTA-boton {
-    padding: 8px 16px;
+    padding: 8px 18px;
     border: 2px solid #0d1b2a;
     border-radius: 10px;
     color: #0d1b2a;
@@ -64,5 +65,43 @@ nav a:hover {
     color: white;
 }
 .introduccion {
-    background-color: 
+    margin-top: 10px;
+    background-image: url(fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 20px;
+    text-align: center;
+}
+.intro-contenido {
+    background: rgba(0,0,0,0.45);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+    color: white;
+}
+.introduccion h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.introduccion p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: white;
+}
+.boton-intro {
+    display: inline-block;
+    padding: 12px 28px;
+    font-size: 17px;
+    background: #1a1a1a;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background 0.3 ease;
+}
+.boton-intro:hover {
+    background: #333;
 }
