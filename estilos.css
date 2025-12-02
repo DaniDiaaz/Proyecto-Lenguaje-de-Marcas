@@ -105,3 +105,147 @@ nav a:hover {
 .boton-intro:hover {
     background: #333;
 }
+.servicios {
+    background-color: #f7f7f7;
+    padding: 80px 20px;
+}
+.servicios-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.servicios h2 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+}
+.servicios-container p.subtitulo {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 50px;
+}
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax (260px, 1fr)); 
+    gap: 30px;
+}
+.servicios-cartas {
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+    text-align: center;
+}
+.servicios-cartas:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+.servicios-cartas h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+}
+.servicios-cartas p {
+    font-size: 17px;
+    color: #555;
+    line-height: 1.6;
+}
+.servicios-cartas i {
+    font-size: 22px;
+    color: #b8860b;
+    margin-bottom: 15px;
+    display: block;
+}
+.btn-servicios {
+    text-align: center;
+    margin-top: 40px;
+}
+.btn-servicios a {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #1f3b73;
+    color: white;
+    font-size: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.btn-servicios a:hover {
+    background-color: #2b4d96;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+.contacto-dos-columnas {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 60px 20px;
+    gap: 40px;
+}
+.formulario {
+    flex: 1;
+}
+.formulario h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+    text-align: center;
+}
+.formulario p {
+    margin-bottom: 20px;
+    color: #555;
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+form label {
+    font-weight: 600;
+    color: #333;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+form button {
+    background: #d4b053;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+form button:hover {
+    background: #c2a24c;
+}
+#imagen {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+@media (max-width: 900px) {
+    .contacto-dos-columnas {
+        flex-direction: column;
+    }
+    #imagen img {
+        height: 250px;
+    }
+}
