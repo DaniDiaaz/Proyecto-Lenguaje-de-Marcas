@@ -41,28 +41,65 @@
 
     <div class="contenedor-servicios">
         <div class="servicio">
-            <h3>Derecho Civil</h3>
+            <h3 class="desplegable-servicio">Derecho Civil</h3>
             <p>Contratos, reclamaciones de cantidad, responsabilidad civil y otros asuntos civiles con un enfoque personalizado.</p>
+            <div class="contenido-servicio">
+                <p>
+                    Ofrecemos asistencia completa en contratos, arrendamientos, herencias, reclamaciones,
+                    responsabilidad civil y procedimientos judiciales relacionados con el derecho civil.
+                    Nuestro trato cercano garantiza una solución adaptada a tus necesidades.
+                </p>
+            </div>
         </div>
         <div class="servicio">
-            <h3>Derecho Penal</h3>
+            <h3 class="desplegable-servicio">Derecho Penal</h3>
             <p>Defensa penal, acusaciones y asistencia jurídica en procedimientos judiciales de todo tipo.</p>
+            <div class="contenido-servicio">
+                <p>
+                    En el área de Derecho Penal ofrecemos una defensa integral tanto para denunciantes como para acusados.
+                    Intervenimos en todas las fases del proceso penal: asistencia en comisaría, declaraciones ante el juzgado, preparación de juicios, recursos y acompañamiento completo durante todo el procedimiento.
+                </p>
+            </div>
         </div>
         <div class="servicio">
-            <h3>Derecho Laboral</h3>
+            <h3 class="desplegable-servicio">Derecho Laboral</h3>
             <p>Despidos, reclamaciones laborales, asesoramiento a empleados y empresas.</p>
+            <div class="contenido-servicio">
+                <p>
+                    En el área de Derecho Laboral ofrecemos asesoramiento y defensa integral tanto a trabajadores como a empresas.
+                    Te acompañamos en cualquier conflicto laboral, garantizando que tus derechos estén protegidos en todo momento.
+                </p>
+            </div>
         </div>
         <div class="servicio">
-            <h3>Derecho Societario y Mercantil</h3>
+            <h3 class="desplegable-servicio">Derecho Societario y Mercantil</h3>
             <p>Asesoramiento integral en la creación, gestión y resolución de conflictos dentro de sociedades y empresas.</p>
+            <div class="contenido-servicio">
+                <p>
+                    El área de Derecho Societario y Mercantil está orientada a ofrecer apoyo jurídico a empresas, emprendedores, autónomos y sociedades de cualquier tamaño.
+                    Nuestro acompañamiento abarca desde el inicio de la actividad hasta la resolución de conflictos internos o comerciales.
+                </p>
+            </div>
         </div>
         <div class="servicio">
-            <h3>Consultoría de empresas</h3>
+            <h3 class="desplegable-servicio">Consultoría de empresas</h3>
             <p>Tramitación de impuestos, gestión de nóminas y contabilidad.</p>
+            <div class="contenido-servicio">
+                <p>
+                    Nuestro servicio de Consultoría de Empresas está enfocado en aportar soluciones prácticas y estratégicas que ayuden a tu negocio a crecer, mejorar su eficiencia y tomar decisiones fundamentadas.
+                    Trabajamos de manera cercana con cada cliente para detectar necesidades reales y proponer un plan de acción adaptado.
+                </p>
+            </div>
         </div>
         <div class="servicio">
-            <h3>Mediador-Conciliador</h3>
+            <h3 class="desplegable-servicio">Mediador-Conciliador</h3>
             <p>Apoyo neutral para resolver disputas de forma eficiente y confidencial.</p>
+            <div class="contenido-servicio">
+                <p>
+                    El servicio de Mediación y Conciliación está orientado a resolver conflictos de forma pacífica, ágil y económica, evitando la judicialización innecesaria de los problemas.
+                    Como mediadores, facilitamos la comunicación entre las partes, ayudándolas a alcanzar acuerdos satisfactorios que protejan sus intereses y fomenten relaciones equilibradas.
+                </p>
+            </div>
         </div>
     </div>
 </section>
@@ -108,5 +145,17 @@
             <p>© 2025 Germán Díaz Abogados — Todos los derechos reservados.</p>
         </div>
     </footer>
+<script>
+document.querySelectorAll(".desplegable-servicio").forEach(titulo => {
+    titulo.addEventListener("click", () => {
+        const contenido = titulo.nextElementSibling.nextElementSibling;
+
+        if (!contenido) return;
+
+        contenido.style.display = 
+            contenido.style.display === "block" ? "none" : "block";
+    });
+});
+</script>
 </body>
 </html>
